@@ -12,7 +12,7 @@ export default async function handler(req, res) {
   }
 
   try {
-    const ghlResponse = await fetch(`https://rest.gohighlevel.com/v1/custom-objects/${CUSTOM_OBJECT_ID}/records`, {
+    const ghlResponse = await fetch(`https://001-sas-properties.vercel.app/`, {
       method: 'GET',
       headers: {
         'Authorization': `Bearer ${GHL_API_KEY}`,
